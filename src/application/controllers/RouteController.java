@@ -1,31 +1,15 @@
 package application.controllers;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+import application.CLabel;
 import application.MapApp;
 import application.MarkerManager;
 import application.SelectManager;
-import application.CLabel;
-import application.services.GeneralService;
 import application.services.RouteService;
-import gmapsfx.javascript.object.GoogleMap;
-import gmapsfx.javascript.object.LatLong;
-import gmapsfx.javascript.object.LatLongBounds;
-import gmapsfx.javascript.object.MVCArray;
-import gmapsfx.shapes.Polyline;
-import javafx.geometry.Orientation;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-import javafx.scene.control.Slider;
 import javafx.scene.control.ToggleGroup;
-import javafx.util.StringConverter;
 
 public class RouteController {
 	// Strings for slider labels

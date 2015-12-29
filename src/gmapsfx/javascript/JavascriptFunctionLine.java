@@ -17,6 +17,7 @@
 package gmapsfx.javascript;
 
 import java.util.List;
+
 import netscape.javascript.JSObject;
 
 /**

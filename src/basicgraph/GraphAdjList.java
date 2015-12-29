@@ -1,12 +1,9 @@
 package basicgraph;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /** A class that implements a directed graph. 
  * The graph may have self-loops, parallel edges. 
@@ -105,10 +102,6 @@ public class GraphAdjList extends Graph {
 			 distance2.addAll(getNeighbors(u));
 		 }
 		 
-//		 for( int u : getInNeighbors(v)){
-//			 distance2.addAll(getInNeighbors(u));
-//		 }
-		 
 		 return distance2;
 	}
 	
@@ -128,43 +121,5 @@ public class GraphAdjList extends Graph {
 		}
 		return s;
 	}
-
-	
-	public static void main(String[] args){
-		GraphAdjList g = new GraphAdjList();
 		
-		g.addVertex();
-		g.addVertex();
-		g.addVertex();
-		g.addVertex();
-		g.addVertex();
-		
-		
-		g.addEdge(1, 2);
-		g.addEdge(1, 3);
-		g.addEdge(2, 1);
-		g.addEdge(2, 3);
-		g.addEdge(3, 0);
-		g.addEdge(3, 2);
-		g.addEdge(3, 3);
-		g.addEdge(4, 0);
-		g.addEdge(4, 1);
-		g.addEdge(4, 3);
-		g.addEdge(4, 4);
-		
-		System.out.println(Arrays.toString(g.degreeSequence().toArray()));
-		
-		/*
-		0 -> {}
-		1 -> {2, 3}
-		2 -> {1, 3}
-		3 -> {0, 2, 3}
-		4 -> {0, 1, 3, 4}
-		*/
-		
-		
-	}
-
-
-
 }

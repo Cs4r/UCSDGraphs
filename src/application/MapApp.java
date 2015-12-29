@@ -7,6 +7,20 @@
  */
 package application;
 
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+import application.controllers.FetchController;
+import application.controllers.RouteController;
+import application.services.GeneralService;
+import application.services.RouteService;
+import gmapsfx.GoogleMapView;
+import gmapsfx.MapComponentInitializedListener;
+import gmapsfx.javascript.object.GoogleMap;
+import gmapsfx.javascript.object.LatLong;
+import gmapsfx.javascript.object.MapOptions;
+import gmapsfx.javascript.object.MapTypeIdEnum;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -29,25 +43,10 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import javafx.scene.web.*;
+import javafx.scene.web.WebView;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-
-import application.controllers.FetchController;
-import application.controllers.RouteController;
-import application.services.GeneralService;
-import application.services.RouteService;
-import gmapsfx.GoogleMapView;
-import gmapsfx.MapComponentInitializedListener;
-import gmapsfx.javascript.object.GoogleMap;
-import gmapsfx.javascript.object.LatLong;
-import gmapsfx.javascript.object.MapOptions;
-import gmapsfx.javascript.object.MapTypeIdEnum;
 
 public class MapApp extends Application
 					implements MapComponentInitializedListener {

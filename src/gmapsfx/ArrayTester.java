@@ -21,7 +21,6 @@ import gmapsfx.javascript.JavascriptArray;
 import gmapsfx.javascript.JavascriptObject;
 import gmapsfx.javascript.JavascriptRuntime;
 import javafx.application.Application;
-import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Worker;

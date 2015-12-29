@@ -1,16 +1,9 @@
 package roadgraph;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Scanner;
+
+import geography.GeographicPoint;
 import util.GraphLoader;
-import geography.*;
 
 /**
  * @author UCSD MOOC Development Team

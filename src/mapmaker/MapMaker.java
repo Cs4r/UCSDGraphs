@@ -3,7 +3,10 @@ package mapmaker;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.List;
-import javax.json.*;
+
+import javax.json.JsonArray;
+import javax.json.JsonNumber;
+import javax.json.JsonObject;
 
 public class MapMaker {
     float[] bounds;

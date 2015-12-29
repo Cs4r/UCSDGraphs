@@ -15,15 +15,16 @@
  */
 package gmapsfx;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CyclicBarrier;
+
 import gmapsfx.javascript.JavaFxWebEngine;
 import gmapsfx.javascript.JavascriptRuntime;
 import gmapsfx.javascript.event.MapStateEventType;
 import gmapsfx.javascript.object.GoogleMap;
 import gmapsfx.javascript.object.LatLong;
 import gmapsfx.javascript.object.MapOptions;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.CyclicBarrier;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.Worker;

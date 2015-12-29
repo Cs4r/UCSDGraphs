@@ -5,7 +5,6 @@
  */
 
 package application;
-import application.services.GeneralService;
 import geography.GeographicPoint;
 import gmapsfx.javascript.object.Marker;
 
