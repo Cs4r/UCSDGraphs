@@ -142,7 +142,7 @@ class MapNode implements Comparable
 	public int compareTo(Object o) {
 		// convert to map node, may throw exception
 		MapNode m = (MapNode)o; 
-		return ((Double)(this.getDistance() + this.getActualDistance())).compareTo((Double) (m.getDistance() + m.getActualDistance()));
+		return ((Double)this.getDistance()).compareTo((Double)m.getDistance());
 	}
 
 	// END WEEK 3 SOLUTIONS
