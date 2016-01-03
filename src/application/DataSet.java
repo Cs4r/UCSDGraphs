@@ -43,7 +43,7 @@ public class DataSet {
      * @return The set of road intersections (vertices in the graph)
      */
     public Set<GeographicPoint> getIntersections() {
-    	Set<GeographicPoint> intersectionsFromGraph = graph.getVertices();
+    	Set<GeographicPoint> intersectionsFromGraph = new HashSet<>(graph.getVertices());
     	if (intersectionsFromGraph == null) {
     		return intersections;
     	}
