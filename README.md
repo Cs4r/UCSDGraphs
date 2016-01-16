@@ -1,4 +1,4 @@
-# MOOCTextEditor
+# UCSDGraphs
 GUI Application developed in the Cousera Course: [Advanced Data Structures in Java](https://www.coursera.org/learn/advanced-data-structures)
 
 ## Description
