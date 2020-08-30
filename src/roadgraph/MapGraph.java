@@ -322,6 +322,7 @@ public class MapGraph {
 		MapNode endNode = pointNodeMap.get(goal);
 
 		HashMap<MapNode, MapNode> parentMap = new HashMap<MapNode, MapNode>();
+		DistanceComparator comparator = new DistanceComparator(getNumEdges(), comparator);
 		PriorityQueue<MapNode> toExplore = new PriorityQueue<MapNode>();
 		HashSet<MapNode> visited = new HashSet<MapNode>();
 
@@ -460,4 +461,20 @@ public class MapGraph {
 
 	}
 
+}
+
+class DistanceComparator implements Comparator<MapNode>{
+	@Override
+	public int compare(MapNode a, MapNode b) {
+		double distanceA = a.getActualDistance() + a.getDistance();
+		double distanceB = b.getActualDistance() + b.getDistance();
+		
+		if(distanceA < distanceB) {
+			return -1;
+		}
+		if(distanceB < distanceA) {
+			return 1;
+		}
+		return 0;
+	}
 }
